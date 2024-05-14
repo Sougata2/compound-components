@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Counter from "./Counter";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h2>Compound components</h2>
+      <Counter>
+        <Counter.Label>My Super flexible counter</Counter.Label>
+        <br />
+        <Counter.Decrease icon="-" />
+        <Counter.Count />
+        <Counter.Increase icon="+" />
+      </Counter>
+      <div>
+        <Counter>
+          <Counter.Label>My Super flexible counter2</Counter.Label>
+          <br />
+          <Counter.Decrease icon="◀️" />
+          <Counter.Count />
+          <Counter.Increase icon="▶️" />
+        </Counter>
+      </div>
+    </>
   );
 }
 
