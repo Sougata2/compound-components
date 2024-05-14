@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/compound-components/static/css/main.31d6cfe0.css",
+    "main.js": "/compound-components/static/js/main.f444c1e3.js",
+    "index.html": "/compound-components/index.html",
+    "main.f444c1e3.js.map": "/compound-components/static/js/main.f444c1e3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.f444c1e3.js"
+  ]
+}
